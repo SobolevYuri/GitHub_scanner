@@ -1,0 +1,35 @@
+{
+  "name": "github_scanner",
+  "version": "1.0.0",
+  "description": "Yury's GitHub scanner system ;-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -p tsconfig.json && npm run server",
+    "server": "nodemon --async-stack-traces --trace-warnings server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SobolevYuri/GitHub_scanner.git"
+  },
+  "author": "Yury Sobolev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SobolevYuri/GitHub_scanner/issues"
+  },
+  "homepage": "https://github.com/SobolevYuri/GitHub_scanner#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.25.1",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "graphql": "^14.5.8",
+    "graphql-scalars": "^1.14.1",
+    "nexus": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
+  }
+}
