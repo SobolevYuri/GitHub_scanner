@@ -14,7 +14,7 @@ Notes:
     *Example*:
         query {
             repositories(
-                /* optional */
+                /*optional*/
                 input: {
                     accessToken: "<your_gh_token>"
                 },
@@ -22,7 +22,7 @@ Notes:
                     equals: "scanner_repoB",
                     contains: "scanner"
                 }
-                /* optional */
+                /*optional*/
             ) {
                 id,
                 name,
@@ -34,15 +34,17 @@ Notes:
 - request for getting the exact repo's details (by specifying the name):
     *Example*:
         query {
-            repositories(
-                /* optional */
+            repositoryDetails(
+                /*optional*/
                 input: {
                     accessToken: "<your_gh_token>"
                 },
-                /* optional */
+                /*optional*/
+                /*required*/
                 where: {
                     name: "scanner_repoB"
                 }
+                /*required*/
             ) {
                 id,
                 name,
